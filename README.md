@@ -45,11 +45,11 @@ Commercial products exist for cooling enclosures by incorporating a heat exchang
 
 The diagram below shows the overall design of HX systems.  
 
-![](Air-to-Air-Heat-Exchanger-diagram.jpg)
+![](images/Air-to-Air-Heat-Exchanger-diagram.jpg)
 
 An example of this style of commodity product is the [Stratus line of HX units](encstratusheatexchangers.pdf) that can be attached to existing enclosures.  BigBoy (K001), and experimental system to explore the cooling from a 44W/C compact HX, is pictured below.
 
-![](BigBoy.jpg)
+![](images/BigBoy.jpg)
 
 As an active cooling solution the HX fan must turned on and off, based on the internal enclosure temperature.  The most common commodity solution is a thermostat with a physical set point (dial) to select a temperature.  For BigBoy (V1.0), we are using the PDU to activate the HX fan based on a software algorithm that reads the internal enclosure temperature from a sensor.
 
@@ -63,11 +63,11 @@ Vented boxes expel the heated enclosure air via a exhaust vent and draw in coole
 
 These are a very common design for a wide range of electronics and telecommunications enclosures.  The enclosure below begins with a NEMA4X enclosure and then cuts two vent holes for exhaust and intake.  A rain shroud and filter make the vented enclosure NEMA 3R, 3RX and IP24.
 
-![](vented-box.webp)
+![](images/vented-box.webp)
 
 Like the Sealed - Active Cooling design, the fans must be activated based on the internal enclosure temperature.  Either a classic thermostat or software running on the Sage node and monitoring the interal enclosure temperature is required to activate the cooling.
 
-![](Dell-in-box.jpg)
+![](images/Dell-in-box.jpg)
 
 Vented enclosures are used for a wide range of electronics, from routers and switches to servers, such as the Dell pictured above.
 
@@ -91,7 +91,7 @@ On a clear night the enclosure's top surface has a direct line of sight into dee
 
 A few passive solutions work well and are common in commodity designs. [An insulating hat](https://www.nvent.com/en-us/hoffman/products/encessh3015?srsltid=AfmBOoq5O3ke69n62lngcNfY0LZdhF6cYcDJBnnI2m6j5GmWRDNKeIVa) can reduce solar gain by 25% during the day and provide a little insulation at night.  More effective, is internal insulation bonded to the internal surface of the enclosuer. Good bonding prevents warm internal air from contacting cold enclosure surfaces, especially those pointed toward deep space.  A common and inexpensive solution is shown below:
 
-![](insulated.png)
+![](images/insulated.png)
 
 Insulated enclosures can seem counter intuititve.  Why insulate a box we are trying to cool?  In a vented box, moving air is the heat path: at 40 CFM the airflow carries about 23 W/C, while a box with 1 m² surface area conducts only about 4–6 W/C. Uninsulated walls can conduct solar gain in the day and dump heat into cosmos at night.  Insulation is inexpensive.  It reduces cooling capacity slightly and buys two things: it keeps the sun from heating the box, and it keeps the top panel's inner face from becoming cold enough to condense. 
 
@@ -99,10 +99,15 @@ Insulated enclosures can seem counter intuititve.  Why insulate a box we are try
 
 If the electronic components inside the enclosure (in contrast to the skin) come in contact with air below the dew point, condensation will occur.  A very common active mitigation is heating the interior.  Warming the air increases the dew point.  Generally a margin of 5C to 10C is suggested.  Ideally, the interior is heated ***only*** when the dew point margin needs to be increased, which depends on relative humidity.  However, a common and cheap (but power-hungry) solution is a simple heating element attached to a thermostat.
 
-![](heater.png)
+![](images/heater.png)
 
 The image above shows (left side) a 50W or 100W heater mounted on a DIN rail -- a solution often used to warm the inside of an enclosure and (right side) a heating plate that can be mounted behind the electronics mounting surface.
   
+## Design Evaluation
+
+In this first step, the focus is on understanding the commodity options for weatherproof enclosures, including func
+
+
 
 ### Pete:  Still Editing....
 
