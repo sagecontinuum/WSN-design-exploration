@@ -41,7 +41,7 @@ For our ~170W Thor nodes, an enclosure would need to be "comically large" (and t
 
 ### Sealed - Active Cooling
 
-Commercial products exist for cooling enclosures by incorporating a heat exchanger (HX).  An air-to-air HX is the simplest and commonly deployed technology.  The sealed electronics compartment (often NEMA4X rated) shields the electronics from harmful environmentals such as marine/coastal, agriculture fertilizer, sulphuric vapors, etc.  The HX can be designed to withstand the harsher external enviroment while providing cooling to the sealed enclosure.
+Commercial products exist for cooling enclosures by incorporating a heat exchanger (HX).  An air-to-air HX is the simplest and commonly deployed technology.  The sealed electronics compartment (often NEMA4X rated) shields the electronics from harmful environmentals such as marine/coastal (Hawaii), agriculture fertilizer, sulphuric vapors (volcanos), etc.  The HX can be designed to withstand the harsher external enviroment while providing cooling to the sealed enclosure.
 
 The diagram below shows the overall design of HX systems.  
 
