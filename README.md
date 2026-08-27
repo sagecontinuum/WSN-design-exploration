@@ -99,7 +99,7 @@ Insulated enclosures can seem counter intuititve.  Why insulate a box we are try
 
 If the electronic components inside the enclosure (in contrast to the skin) come in contact with air below the dew point, condensation will occur.  A very common active mitigation is heating the interior.  Warming the air increases the dew point.  Generally a margin of 5C to 10C is suggested.  Ideally, the interior is heated ***only*** when the dew point margin needs to be increased, which depends on relative humidity.  However, a common and cheap (but power-hungry) solution is a simple heating element attached to a thermostat.
 
-![](images/eater.png)
+![](images/heater.png)
 
 The image above shows (left side) a 50W or 100W heater mounted on a DIN rail -- a solution often used to warm the inside of an enclosure and (right side) a heating plate that can be mounted behind the electronics mounting surface.
   
