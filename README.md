@@ -1,6 +1,6 @@
 # Wild Sage Node Design Study
 
-Wild Sage Nodes (WSN) live outdoors and need a special, weatherproof, enclosure.
+Wild Sage Nodes (WSN) live outdoors and need a weatherproof enclosure.
 
 The goal of this design study is to gain experience with commodity weatherproof computer enclosures to inform and guide the selection of key design parameters for a final design that balances manufacturability (including complexity, timeline, sourcing, etc), reliability, servicability, functionality (runs Sage workloads well for our locations), and cost. 
 
@@ -47,7 +47,7 @@ The diagram below shows the overall design of HX systems.
 
 ![](images/Air-to-Air-Heat-Exchanger-diagram.jpg)
 
-An example of this style of commodity product is the [Stratus line of HX units](encstratusheatexchangers.pdf) that can be attached to existing enclosures.  BigBoy (K001), and experimental system to explore the cooling from a 44W/C compact HX, is pictured below.
+An example of this style of commodity product is the [Stratus line of HX units](encstratusheatexchangers.pdf) that can be attached to existing enclosures.  **BigBoy** (K001), and experimental system to explore the cooling from a 44W/C compact HX, is pictured below.
 
 ![](images/BigBoy.jpg)
 
@@ -99,20 +99,10 @@ Insulated enclosures can seem counter intuititve.  Why insulate a box we are try
 
 If the electronic components inside the enclosure (in contrast to the skin) come in contact with air below the dew point, condensation will occur.  A very common active mitigation is heating the interior.  Warming the air increases the dew point.  Generally a margin of 5C to 10C is suggested.  Ideally, the interior is heated ***only*** when the dew point margin needs to be increased, which depends on relative humidity.  However, a common and cheap (but power-hungry) solution is a simple heating element attached to a thermostat.
 
-![](images/heater.png)
+![](images/eater.png)
 
 The image above shows (left side) a 50W or 100W heater mounted on a DIN rail -- a solution often used to warm the inside of an enclosure and (right side) a heating plate that can be mounted behind the electronics mounting surface.
   
-## Design Evaluation
-
-In this first step, the focus is on understanding the commodity options for weatherproof enclosures, including func
-
-
-
-### Pete:  Still Editing....
-
-
-
-
+Next page:  [Design Evaluation](./Design_Evaluation.md)
 
 
