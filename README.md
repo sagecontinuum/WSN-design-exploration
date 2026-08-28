@@ -1,6 +1,6 @@
 # Wild Sage Node Design Study
 
-Wild Sage Nodes (WSN) live outdoors and need a weatherproof enclosure.
+Wild Sage Nodes (WSN) live outdoors and need a weatherproof enclosure..
 
 The goal of this design study is to gain experience with commodity weatherproof computer enclosures to inform and guide the selection of key parameters for a final design that balances manufacturability (including complexity, timeline, sourcing, etc.), reliability, serviceability, functionality (runs Sage workloads well for our locations), and cost. 
 
