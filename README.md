@@ -33,37 +33,38 @@ The previous WSNs used sealed, passive cooling.  That classic design was both ve
 
 ![](images/Jetson-NX-WSN.png)
 
-Heat is dissipated via the skin -- the total surface area of the enclosure.  This method works well when the ratio of dissipated heat is small compared to the enclosure size.  Such is often the case with a sealed PTZ camera or small network switch mounted in a waterproof enclosure.  The heat from the electronics inside is easily dissipated to the external surface.  For the previous WSN, we were at the limit of cooling for the box size.  When there was signficant solar gain, such as in Texas, the box became too warm.  Making the enclosure larger increases the solar gain, and effectiveness diminishes.
+Heat is dissipated via the skin -- the total surface area of the enclosure.  This method works well when the ratio of dissipated heat is small compared to the enclosure size.  Such is often the case with a sealed PTZ camera or small network switch mounted in a waterproof enclosure.  The heat from the electronics inside is easily dissipated to the external surface.  The previous WSN was at the limit of cooling for the box size.  When there was signficant solar gain, such as in Texas, the box became too warm.  Making the enclosure larger increases the solar gain, and the effectiveness of increasing the surface area to provide cooling diminishes.
 
-For our ~170W Thor nodes, an enclosure would need to be "comically large" (and therefore impractical) to dissipate sufficient heat via the surface area of the enclosure.  
+For ~170W Thor nodes, an enclosure would need to be "comically large" (and therefore impractical) to dissipate heat via the surface area of the enclosure.  
 
 **Advantages**: Very simple for low-power devices.  Maintenace free.
 
-**Disadvantages**: Very large enclosure dimensions required for Thor-scale heat, no solution for active internal dewpoint/condensation management.
+**Disadvantages**: Impractical for the more powerful Thor design point.  
+
 
 ### Sealed - Active Cooling
 
-Commercial products exist for cooling enclosures by incorporating a heat exchanger (HX).  An air-to-air HX is the simplest and commonly deployed technology.  The sealed electronics compartment (often NEMA4X rated) shields the electronics from harmful environmentals such as marine/coastal (Hawaii), agriculture fertilizer, sulphuric vapors (volcanos), etc.  The HX can be designed to withstand the harsher external enviroment while providing cooling to the sealed enclosure.
+Commercial products exist for cooling enclosures by incorporating a heat exchanger (HX).  An air-to-air HX is simple.  it is also a commonly deployed technology.  The sealed electronics compartment (often NEMA4X rated) shields the electronics from harmful environmentals such as marine/coastal (Hawaii), agriculture fertilizer, sulphuric vapors (volcanos), etc.  The HX can be designed to withstand the harsher external enviroment while providing cooling to the sealed enclosure.
 
 The diagram below shows the overall design of HX systems.  
 
 ![](images/Air-to-Air-Heat-Exchanger-diagram.jpg)
 
-An example of this style of commodity product is the [Stratus line of HX units](encstratusheatexchangers.pdf) that can be attached to existing enclosures.  **BigBoy** (K001), and experimental system to explore the cooling from a 44W/C compact HX, is pictured below.
+An example of this style of commodity product is the [Stratus line of HX units](encstratusheatexchangers.pdf) that can be attached to existing enclosures.  **BigBoy** (K001), an experimental system to explore the cooling from a 44W/C compact HX, is pictured below.
 
 ![](images/BigBoy.jpg)
 
-As an active cooling solution the HX fan must turned on and off, based on the internal enclosure temperature.  The most common commodity solution is a thermostat with a physical set point (dial) to select a temperature.  For BigBoy (V1.0), we are using the PDU to activate the HX fan based on a software algorithm that reads the internal enclosure temperature from a sensor.
+As an active cooling solution, the HX fan must cycle on and off based on the internal enclosure temperature.  The most common commodity solution is a thermostat with a physical set point (dial) to select a temperature.  For BigBoy (V1.0), we are using the PDU to activate the HX fan based on a software algorithm that reads the internal enclosure temperature from a sensor.
 
 **Advantages**: Provides *very effective* active cooling to a sealed enclosure.
 
-**Disadvantages**: Costly, requires custom modification to the selected enclosure to mount the HX.  By itself, the HX only provides cooling, not active dewpoint/condensation management. Requires periodic maintenace and cleaning.
+**Disadvantages**: Costly, requires custom modification to the selected enclosure to mount the HX.  By itself, the HX only provides cooling, not active dewpoint/condensation management. Requires periodic maintenance and cleaning.
 
 ### Vented - Active Cooling
 
 Vented boxes expel the heated enclosure air via a exhaust vent and draw in cooler outside air via an intake vent.  
 
-These are a very common design for a wide range of electronics and telecommunications enclosures.  The enclosure below begins with a NEMA4X enclosure and then cuts two vent holes for exhaust and intake.  A rain shroud and filter make the vented enclosure NEMA 3R, 3RX and IP24.
+The enclosures are a very common design for a wide range of electronics and telecommunications.  The enclosure below begins with a NEMA4X box and then cuts two vent holes -- one for exhaust and one for intake.  A rain shroud and air filter make the vented enclosure NEMA 3RX and IP24.
 
 ![](images/vented-box.webp)
 
