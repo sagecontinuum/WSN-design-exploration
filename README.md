@@ -84,7 +84,7 @@ All three of the designs above need careful management of moisture and condensat
 
 A small PTFE (teflon/gore-tex) vent allows pressure inside and outside the enclosure to equalize so diurnal pressure changes do not build. Without a PTFE vent, the cable glans and door seals will continuously flex and relieve pressure.
 
-Condensation occurs when any interior surface falls below the dew point of the air in contact with it. The margin closes by two routes: a *surface cooling* below a steady dew point, or the *dew point rising* to meet a steady surface. The severe cases are those where both move at once.
+Condensation occurs when any interior surface falls below the dew point of the air in contact with it. The gap closes from either side: *the surface gets colder*, or *the air gets wetter* — adding moisture raises the dew point until it meets the surface. The severe cases are those where both happen at once.
 
 The two routes for condensation are solved with two distinct mechanisms.
 
@@ -98,7 +98,7 @@ A few passive solutions work well and are common in commodity designs. [An insul
 
 Insulated enclosures can seem counter intuititve.  Why insulate a box we are trying to cool?  In a vented box, moving air is the heat path: at 40 CFM the airflow carries about 23 W/C, while a box with 1 m² surface area conducts only about 4–6 W/C. Uninsulated walls can conduct solar gain in the day and dump heat into cosmos at night.  Insulation is inexpensive.  It reduces cooling capacity slightly and buys two things: it keeps the sun from heating the box, and it keeps the top panel's inner face from becoming cold enough to condense. 
 
-### Heating (dew point rising)
+### Heating (increasing the dew point)
 
 If the electronic components inside the enclosure (in contrast to the skin) come in contact with air below the dew point, condensation will occur.  A very common active mitigation is heating the interior.  Warming the air increases the dew point.  Generally a margin of 5C to 10C is suggested.  Ideally, the interior is heated ***only*** when the dew point margin needs to be increased, which depends on relative humidity.  However, a common and cheap (but power-hungry) solution is a simple heating element attached to a thermostat.
 
