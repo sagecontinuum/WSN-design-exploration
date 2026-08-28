@@ -18,7 +18,7 @@ Ideally, final designs would support a wide range of deployment sites and config
 **Environmental expectations**:
 
 + Operating temperature range: -20C to 40C (outdoor temperature)
-+ Non-operating (storage) temperature range: -40C to 100C
++ Non-operating (storage) temperature range: -40C to 60C
 + Operating relative humidity: 20% - 95%
 + Solar gain: high plains of Colorado
 + Internal heat from electronics: ~170W
