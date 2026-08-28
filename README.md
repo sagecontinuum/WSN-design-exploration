@@ -37,7 +37,7 @@ Heat is dissipated via the skin -- the total surface area of the enclosure.  Thi
 
 For ~170W Thor nodes, an enclosure would need to be "comically large" (and therefore impractical) to dissipate heat via the surface area of the enclosure.  
 
-**Advantages**: Very simple for low-power devices.  Maintenace free.
+**Advantages**: Very simple for low-power devices.  Maintenance free.
 
 **Disadvantages**: Impractical for the more powerful Thor design point.  
 
@@ -76,7 +76,7 @@ Vented enclosures are used for a wide range of electronics, from routers and swi
 
 **Advantages**: Very cost effective, easy to service, cooling can be very effective with powerful fans, a wide range of pre-built enclosures exists -- customized vents cut before the enclosure is shipped.
 
-**Disadvantages**: Outside air is brought into contact with the electronics.  In environments where the air is caustic or abrasive, the lifespan is shortend.  
+**Disadvantages**: Outside air is brought into contact with the electronics.  In environments where the air is caustic or abrasive, the lifespan is shortend.  Periodic maintenance is required on the air filter.
 
 # Managing Condensation
 
