@@ -2,7 +2,7 @@
 
 Wild Sage Nodes (WSN) live outdoors and need a weatherproof enclosure.
 
-The goal of this design study is to gain experience with commodity weatherproof computer enclosures to inform and guide the selection of key design parameters for a final design that balances manufacturability (including complexity, timeline, sourcing, etc), reliability, servicability, functionality (runs Sage workloads well for our locations), and cost. 
+The goal of this design study is to gain experience with commodity weatherproof computer enclosures to inform and guide the selection of key parameters for a final design that balances manufacturability (including complexity, timeline, sourcing, etc), reliability, servicability, functionality (runs Sage workloads well for our locations), and cost. 
 
 Ideally, final designs would support a wide of deployment sites and configurations while also balancing design constraints.
 
@@ -29,7 +29,9 @@ Broadly, enclosures for electronics fall into several well understood catagories
 
 ### Sealed - Passive Cooling
 
-The previous WSNs used Sealed Passive Cooling (SPC).  That classic design was both very functional and resilient. The enclosure supported the Jetson NX GPU.  The watertight box used a small PTFE port to equalize pressure and average humidity.
+The previous WSNs used sealed, passive cooling.  That classic design was both very functional and resilient. The enclosure supported the Jetson NX GPU.  The watertight box used a small PTFE port to equalize pressure and average humidity.
+
+![](images/Jetson-NX-WSN.png)
 
 Heat is dissipated via the skin -- the total surface area of the enclosure.  This method works well when the ratio of dissipated heat is small compared to the enclosure size.  Such is often the case with a sealed PTZ camera or small network switch mounted in a waterproof enclosure.  The heat from the electronics inside is easily dissipated to the external surface.  For the previous WSN, we were at the limit of cooling for the box size.  When there was signficant solar gain, such as in Texas, the box became too warm.  Making the enclosure larger increases the solar gain, and effectiveness diminishes.
 
