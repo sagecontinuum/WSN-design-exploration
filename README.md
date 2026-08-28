@@ -50,7 +50,7 @@ The diagram below shows the overall design of HX systems.
 
 ![](images/Air-to-Air-Heat-Exchanger-diagram.jpg)
 
-An example of this style of commodity product is the [Stratus line of HX units](encstratusheatexchangers.pdf) that can be attached to existing enclosures.  **BigBoy** (K001), an experimental system to explore the cooling from a 44W/C compact HX, is pictured below.
+An example of this style of commodity product is the [Stratus line of HX units](encstratusheatexchangers.pdf) that can be attached to existing enclosures.  **BigBoy** (K001), an experimental system to explore cooling with a 44W/C compact HX, is pictured below.
 
 ![](images/BigBoy.jpg)
 
@@ -100,8 +100,7 @@ Insulated enclosures can seem counterintuitive.  Why insulate a box we are tryin
 
 ### Heating (increasing the dew point)
 
-If the electronic components inside the enclosure (in contrast to the skin) come in contact with air below the dew point, condensation will occur.  A very common active mitigation is heating the interior.  Warming the air increases the dew point.  Generally a margin of 5C to 10C is suggested.  Ideally, the interior is heated ***only*** when the dew point margin needs to be increased, which depends on relative humidity.  However, a common and cheap (but power-hungry) solution is a simple heating element attached to a thermostat.
-
+Condensation forms on the electronic components themselves, not just on the enclosure skin, whenever a component's surface falls below the dew point of the air around it. A very common active mitigation is heating the interior so that every component surface stays 5C to 10C above the dew point of the interior air. Ideally, the interior is heated only when that margin needs to be increased, which depends on relative humidity. However, a common and cheap (but power-hungry) solution is a simple heating element attached to a thermostat.
 ![](images/heater.png)
 
 The image above shows (left side) a 50W or 100W heater mounted on a DIN rail -- a solution often used to warm the inside of an enclosure -- and (right side) a heating plate that can be mounted behind the electronics mounting surface.
