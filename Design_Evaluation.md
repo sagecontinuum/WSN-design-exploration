@@ -68,9 +68,7 @@ This unit is configured to be ***vented***, in a compact box that is lighter and
 
 [Altelix NFC161208VFD2](https://altelix.com/altelix-16x12x8-vented-fiberglass-weatherproof-nema-enclosure-with-24-vdc-cooling-fan/?sku=NFC161208VFD2)
 
-**Cooling Technology:**  Stratus 22W/C compact heat exchanger, NEMA 4X (~2.5" thinner)
-
-[Stratus TE20-015-24D-4X](https://www.automationdirect.com/adc/shopping/catalog/enclosure_thermal_management_-a-_lights/air-to-air_heat_exchangers/te20-015-24d-4x)
+**Cooling Technology:**  Fans and vents.
 
 **Sensing:** Two SHT45 USB devices measure temperature and relative humidity inside the enclosure and outside in the environment.
 

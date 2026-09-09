@@ -6,7 +6,7 @@ The goal of this design study is to gain experience with commodity weatherproof 
 
 Ideally, final designs would support a wide range of deployment sites and configurations while also balancing design constraints.
 
-**Methodology**:  Build three to five real prototypes, using several different commodity enclosures and technologies, and gather experience, data, and insights to guide the selection of key design requirements, parameters, and components.
+**Methodology**:  Build three to five real prototypes, using several different commodity enclosures and technologies, and gather experience, data, and insights to guide the selection of key design requirements, parameters, and components for a design that can be given to a local electronics manufacturing company to assemble and test for deployment.
 
 **Core components**: The basic WSN building block is simple:
 
@@ -17,11 +17,11 @@ Ideally, final designs would support a wide range of deployment sites and config
 
 **Environmental expectations**:
 
-+ Operating temperature range: -20C to 40C (outdoor temperature)
++ Operating temperature range: -25C to 40C (outdoor temperature)
 + Non-operating (storage) temperature range: -40C to 60C
 + Operating relative humidity: 20% - 95%
 + Solar gain: high plains of Colorado
-+ Internal heat from electronics: ~170W
++ Internal heat from electronics: max: ~170W
 
 ## Enclosure Technology
 
@@ -33,7 +33,7 @@ The previous WSNs used sealed, passive cooling.  That classic design was both ve
 
 ![](images/Jetson-NX-WSN.png)
 
-Heat is dissipated via the skin -- the total surface area of the enclosure.  This method works well when the ratio of dissipated heat is small compared to the enclosure size.  Such is often the case with a sealed PTZ camera or small network switch mounted in a waterproof enclosure.  The heat from the electronics inside is easily dissipated to the external surface.  The previous WSN was at the limit of cooling for the box size.  When there was significant solar gain, such as in Texas, the box became too warm.  Making the enclosure larger increases the solar gain, and the effectiveness of increasing the surface area to provide cooling diminishes.
+Heat is dissipated via the skin -- the total surface area of the enclosure.  This method works well when the ratio of dissipated heat is small compared to the enclosure size.  Such is often the case with a sealed PTZ camera or small network switch mounted in a waterproof enclosure. The Jetson NX GPUs only used about 15W.  The heat from the electronics inside is easily dissipated to the external surface.  The previous WSN was at the limit of cooling for the box size, and when solar gain was high, such as in Texas, the internal air temperature could exceed 70C! Making the enclosure larger increases the solar gain, and the effectiveness of increasing the surface area to provide cooling diminishes.
 
 For ~170W Thor nodes, an enclosure would need to be "comically large" (and therefore impractical) to dissipate heat via the surface area of the enclosure.  
 
